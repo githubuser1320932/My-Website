@@ -1,52 +1,66 @@
-<html>
-	<head>
-
-		<title>Kenneth's Music Collection</title>
-	</head>
-	
-	<body>
-		<h1>Kenneth's Music Collection</h1>
-		<hr />
-		<div id="header">
-			<h2>Japanese Covers</h2>
-		</div>
-			<div class="body">
-				<img src="Japanese Music.jpg" width="35%" alt="Illustration of a Japanese Winter" />
-				<p>Music that I tried singing recently.</p>
-				<h5>
-				<p>Kikuo - Aishite Aishite Aishite (Cover)</p>
-					<audio controls src="aishite.wav">
-					</audio>
-				
-				<p>P-Maru - Shiru vu Purejidento (Cover)</p>
-					<audio controls src="president.mp3">
-				<p></p>
-				<p></p>
-				<p></p>
-				</h5>
-			</div>
-		<hr />
-		<div id="header">
-			<h2>Original Compositions</h2>
-		</div>
-		<div>
-			<img src="Dark River.jpg" width="35%" alt="Juniper plays in Stockton"/>
-			<br/>
-				<div>
-				<p>Some of my compositions spanning from 2022 to now. <br/>
-				</div>
-			
-			<h5>
-		<div id="body">
-			<p>Dark River</p>
-				<audio controls src="Dark River.mp3">
-					</audio>
-			<p>Dozol</p>
-				<audio controls src="Dozol.m4a">
-					</audio>
-			<p></p>
-			</h5>
-		</div>
-		<hr />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth's Music Collection</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+         header {
+            text-align: center;
+        }
+        .body {
+            display: inline-block;
+            text-align: left;
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin: 20px 0; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Kenneth's Music Collection</h1>
+    <hr />
+    <div id="header">
+        <h2>Japanese Covers</h2>
+    </div>
+    <div class="body">
+        <img src="Japanese Music.jpg" width="35%" alt="Illustration of a Japanese Winter" />
+        <p>Music that I tried singing recently.</p>
+        <h5>
+            <p>Kikuo - Aishite Aishite Aishite (Cover)</p>
+            <audio controls src="aishite.wav"></audio>
+            <p>P-Maru - Shiru vu Purejidento (Cover)</p>
+            <audio controls src="president.mp3"></audio>
+        </h5>
+    </div>
+    <hr />
+    <div id="header">
+        <h2>Original Compositions</h2>
+    </div>
+    <div class="body">
+        <img src="Dark River.jpg" width="35%" alt="Juniper plays in Stockton"/>
+        <br/>
+        <div>
+            <p>Some of my compositions spanning from 2022 to now.</p>
+        </div>
+        <h5>
+            <p>Dark River</p>
+            <audio controls src="Dark River.mp3"></audio>
+            <p>Dozol</p>
+            <audio controls src="Dozol.m4a"></audio>
+        </h5>
+    </div>
+    <hr />
+</body>
 </html>
