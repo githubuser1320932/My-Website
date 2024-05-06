@@ -1,0 +1,113 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth's Epic Music Collection</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+  <h1>
+    Kenneth's Epic Music Collection
+  </h1>
+</header>
+<div class="scrollbar">
+    <div id="header">
+      Behold the Majesty of Japanese Covers
+    </div>
+    <div class="body">
+      <button id="myButton">Song Info</button>
+      <img src="images/Japanese Music.jpg" width="35%" alt="Illustration of a Japanese Winter" />
+
+      <div id="myPopup" class="popup">
+          <div class="popup-content">
+              <h1 style="color: blue">
+                  1. Kyu Kurarin by Iyowa
+		  2. Egorock by Surii
+              </h1>
+              <p>Song 1 is based off the story of Sayori from the video game 
+Doki Doki Literature Club. It talks about deep topics such as depression and
+unrequited love with the last line "watashi chuuburarin" meaning my heart hangs 
+in the air or perhaps a euphamism for hanging.
+
+</p>		
+<p>
+Song 2 is very much like Surii's other songs in theme. The
+theme being not being able to fit in. A misfit who refuses to conform and
+has a hard time expressing himself in a harsh world that banishes those that 
+are different.  
+</p> 
+              <button id="closePopup">
+                  Close
+              </button>
+          </div>
+      </div>
+        <p>Prepare your soul for the enchanting melodies of the Far East.</p>
+        <h5>
+            <p>iyowa - kyu kurarin (Cover)</p>
+            <audio controls src="music/kyu final.mp3"></audio>
+            <p>surii - egorock (Cover)</p>
+            <audio controls src="music/egorock.wav"></audio>
+        </h5>
+    </div>
+    <div id="header">
+        <h2>Delve into the Depths of Original Compositions</h2>
+    </div>
+    <div class="body">
+        <img src="images/Dark River.jpg" width="35%" alt="Juniper plays in Stockton"/>
+        <br/>
+        <div>
+            <p>Witness the birth of musical genius!</p>
+        </div>
+        <h5>
+            <p>Dark River</p>
+            <audio controls src="music/Dark River.mp3"></audio>
+            <p>Dozol</p>
+            <audio controls src="music/Dozol.m4a"></audio>
+        </h5>
+    </div>
+    <div id="header">
+        <h2>Explore Local Bands in San Joaquin County</h2>
+    </div>
+    <div class="body">
+        <p>Here are some photos that I have taken of local bands in San Joaquin county.</p>
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/band1.jpg" alt="Local Band 1" style="width: 25%;">
+                <img src="images/band2.jpg" alt="Local Band 2" style="width: 15%;">
+                <img src="images/band3.jpg" alt="Local Band 3" style="width: 25%;">
+            </div>
+        </div>
+    </div>
+</div>
+<footer>Site created with love by Kenneth</footer>
+</body>
+<script>
+    myButton.addEventListener(
+        "click",
+        function () {
+            myPopup.classList.add("show");
+        }
+    );
+    closePopup.addEventListener(
+        "click",
+        function () {
+            myPopup.classList.remove(
+                "show"
+            );
+        }
+    );
+    window.addEventListener(
+        "click",
+        function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove(
+                    "show"
+                );
+            }
+        }
+    );
+
+  
+</script>
+</html>
